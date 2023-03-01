@@ -1,0 +1,220 @@
+@media screen and (max-width: 1024px) {
+  #header .header__div__middle nav ul {
+    gap: 0 !important;
+  }
+  #header .header__div__middle nav ul li {
+    padding-right: 30px;
+  }
+  #header .header__div__middle nav ul li:last-child {
+    padding-right: 0;
+  }
+  #header .header__div__middle nav ul li a {
+    font-size: 14px;
+  }
+  #header .header__div__right div {
+    left: 50px;
+  }
+  #header .header__div__right ._icon-heart:before {
+    font-size: 16px;
+  }
+  #header .header__div__right ._icon-search:before {
+    font-size: 14px;
+  }
+  #header .header__div__right ._icon-basket:before {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #header .header__div__middle nav {
+    display: none;
+  }
+  #header #div__menu__phone {
+    display: block !important;
+  }
+  #header #div__phone {
+    display: inline-block !important;
+    position: absolute;
+    left: 0;
+    top: -320px;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.5s ease-in-out;
+  }
+  #header #div__phone.active {
+    top: 85px;
+    transition: 0.5s ease-in-out;
+  }
+  #header .phone__header {
+    height: 70px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  #header .phone__header div {
+    display: flex;
+    gap: 20px;
+  }
+  #header .div_min_curr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 24px;
+    right: 51px;
+    width: 10px;
+    height: 10px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 9px;
+    color: #1b1a17;
+    border: 1px solid #e6c8b4;
+    border-radius: 50%;
+    background: #e6c8b4;
+  }
+  #header .phone__main {
+    width: 100%;
+    padding: 30px 30px 10px 30px;
+  }
+  #header .phone__main nav ul li {
+    padding: 0 0 20px 0;
+  }
+  #header .phone__main nav ul li a {
+    font-size: 18px;
+  }
+  #header .clock {
+    margin: 0 20px 0 20px !important;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: #fff;
+    border-radius: 100%;
+    border: 2px solid #34626c;
+    top: 7px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  #header .clock .top {
+    position: absolute;
+    width: 1px;
+    height: 4px;
+    background-color: #262626;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  #header .clock .right {
+    position: absolute;
+    width: 4px;
+    height: 1px;
+    background-color: #262626;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+  }
+  #header .clock .bottom {
+    position: absolute;
+    width: 1px;
+    height: 4px;
+    background-color: #262626;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+  }
+  #header .clock .left {
+    position: absolute;
+    width: 4px;
+    height: 1px;
+    background-color: #262626;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  #header .clock .center {
+    height: 2px;
+    width: 2px;
+    background-color: #262626;
+    border-radius: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  #header .clock .hour {
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    animation: time 100s infinite linear;
+  }
+  #header .clock .hour:before {
+    content: "";
+    height: 15px;
+    width: 2px;
+    background-color: #262626;
+    position: absolute;
+    top: 10px;
+  }
+  #header .clock .minute {
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation: time 60s infinite linear;
+  }
+  #header .clock .minute:before {
+    position: absolute;
+    content: "";
+    background-color: #262626;
+    height: 20px;
+    width: 1px;
+    top: 25px;
+  }
+  #header .clock .second {
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    animation: time 15s infinite linear;
+  }
+  #header .clock .second:before {
+    position: absolute;
+    content: "";
+    background-color: #fd1111;
+    height: 20px;
+    width: 2px;
+    top: 25px;
+  }
+  @keyframes time {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+@media screen and (max-width: 571px) {
+  #header .header__div__right i,
+  #header .header__div__right .div__curreint {
+    display: none;
+  }
+}
